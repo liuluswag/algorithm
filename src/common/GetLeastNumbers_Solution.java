@@ -1,6 +1,7 @@
 package common;
 
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 public class GetLeastNumbers_Solution {
 
@@ -46,6 +47,26 @@ public class GetLeastNumbers_Solution {
         int t = nums[i];
         nums[i] = nums[j];
         nums[j] = t;
+    }
+
+    /**
+     * 维护大根堆，将大于k的元素去除，剩下的元素都比被去除的元素小
+     * @param nums
+     * @param k
+     * @return
+     */
+    public ArrayList<Integer> GetLeastNumbers_Solution2(int[] nums,int k){
+        if (k > nums.length || k <= 0){
+            return new ArrayList<>();
+        }
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1,o2) -> o2 -o1);
+        for (int num : nums) {
+            maxHeap.add(num);
+            if (maxHeap.size() > k){
+                maxHeap.poll();
+            }
+        }
+        return new ArrayList<>(maxHeap);
     }
 
 
