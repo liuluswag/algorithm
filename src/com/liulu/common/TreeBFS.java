@@ -1,4 +1,4 @@
-package common;
+package com.liulu.common;
 
 import java.util.LinkedList;
 import java.util.Queue;

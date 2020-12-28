@@ -1,4 +1,4 @@
-package offer;
+package com.liulu.offer;
 
 public class deleteDuplication {
 

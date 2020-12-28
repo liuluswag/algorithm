@@ -1,4 +1,4 @@
-package leetcode;
+package com.liulu.leetcode;
 
 public class reverseList {
     /**

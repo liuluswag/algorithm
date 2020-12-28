@@ -1,4 +1,4 @@
-package common;
+package com.liulu.common;
 
 /**
  * 约瑟夫环问题

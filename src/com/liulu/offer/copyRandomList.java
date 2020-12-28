@@ -1,4 +1,4 @@
-package offer;
+package com.liulu.offer;
 
 import java.util.HashMap;
 import java.util.Map;

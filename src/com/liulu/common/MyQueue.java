@@ -1,4 +1,4 @@
-package common;
+package com.liulu.common;
 
 public class MyQueue {
 
